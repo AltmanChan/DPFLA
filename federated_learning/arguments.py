@@ -15,7 +15,7 @@ class Arguments:
         self.logger = logger
 
         self.batch_size = 64
-        self.test_batch_size = 500
+        self.test_batch_size = 1000
         self.lr = 0.01
         self.momentum = 0.9
         self.device = "cuda"  # cpu\cuda
@@ -23,7 +23,7 @@ class Arguments:
         self.seed = SEED
 
         self.global_rounds = 100
-        self.local_epochs = 2
+        self.local_epochs = 1
 
         self.source_class = 1
         self.target_class = 7

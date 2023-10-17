@@ -19,20 +19,12 @@ def replace_dog_with_cat():
 def fed_svd():
     return 'fed_svd'
 
-
-def lfighter():
-    return 'lfighter'
-
-def FlDefender():
-    return 'fl_defender'
+def DPFLA():
+    return 'DPFLA'
 
 
 def fed_avg():
     return 'fedavg'
-
-
-def my_function():
-    return 'my_function'
 
 
 def simple_median():
