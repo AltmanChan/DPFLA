@@ -29,7 +29,7 @@ class Cifar10CNN(nn.Module):
         self.fc1 = nn.Linear(128 * 4 * 4, 128)
         self.fc2 = nn.Linear(128, 10)
 
-    def forward(self, x):
+    def forward(self, x, return_features=False):
         x = self.bn1(F.relu(self.conv1(x)))
         x = self.bn2(F.relu(self.conv2(x)))
         x = self.pool1(x)
@@ -44,7 +44,13 @@ class Cifar10CNN(nn.Module):
 
         x = x.view(-1, 128 * 4 * 4)
 
+        features = x
+
         x = self.fc1(x)
         x = F.softmax(self.fc2(x), dim=1)
 
-        return x
+        if return_features:
+            return x, features
+        else:
+            return x
+
