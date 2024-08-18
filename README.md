@@ -2,10 +2,6 @@
 
 DPFLA is a defensive scheme for federated learning that can detect poisoning attacks without revealing the actual gradients of participants.
 
-## News!
-
-**March 01, 2024: Our Paper DPFLA Accepted by *IEEE Transactions on Services Computing*!**
-Our paper "DPFLA: Defending Privacy Federated Learning Against Poisoning Attacks" is accepted by IEEE Transactions on Services Computing.
 
 ## Introduction
 
